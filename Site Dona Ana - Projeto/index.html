@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="_img/index.ico">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Receitas de Dona Ana</title>
+</head>
+
+<body>
+    <header>
+        
+              <img id="quadrado" src="_img/logo.jpg" alt="">
+        
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+
+            <a href="http://127.0.0.1:5500/index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Receitas </a>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:5500/comida.html">Comida Caseira</a>
+                    <a href="http://127.0.0.1:5500/salgados.html">Variações de Salgado</a>
+                    <a href="http://127.0.0.1:5500/sobremesa.html">Sobremesa</a>
+                    <a href="http://127.0.0.1:5500/bolos.html">Bolos</a>
+                </div>
+            </div>
+            
+            <a  href="http://127.0.0.1:5500/sobre.html">Sobre</a>
+            <a id="conato" href="http://127.0.0.1:5500/contato.html">Contato</a>
+        </nav>
+
+        <button class="lodg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="_img/login.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Usuário</b></label>
+      <input type="text" placeholder="E-mail" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="senha" name="psw" required>
+        
+      <button class="lodg" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembre-me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw"> <a href="#">Esqueseu a senha?</br><a href="#">Clique aqui para se Cadastrar</a></span>
+    </div>
+  </form>
+</div>
+    </header>
+    
+    <aside>
+        <div class="slider">
+            <div class="slides">
+                <!--Radio butons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <!--Fim Radio butons-->
+
+                <!--Slide Img-->
+                <div class="slide first">
+                    <img src="_img/slid/cap1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="_img/slid/cap2.jpg" alt="Imagem 2">
+                </div>
+
+                <!--Fim Slide Img-->
+
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+        </div>
+        <!--Fim Navigation auto-->
+
+        <script src="_js/scrip.js"></script>
+        </br>
+        <img id="panq" src="_img/slid/panq.jpg" alt="">
+
+        <img id="panq" src="_img/slid/cookie.jpg" alt="">
+
+    </aside>
+
+    <main>
+        <div id="text">
+            <h2>Centenas de receitas caseiras fáceis de fazer</h2>
+            </br>
+            <p>Junte-se a mim para celebrar uma vida cheia de receitas que podem ser recriadas sem esforço na sua
+                cozinha! Me acompanhe enquanto compartilho minhas receitas favoritas de café da manhã, almoço, jantar e
+                sobremesas.</p>
+        </div>
+    </br>
+        <div class="card">
+            <a href="http://127.0.0.1:5500/comida.html"><img src="_img/card/sopa mandioca.jpg" alt="Avatar" style="width:100%"></a>
+            <div class="container">
+                <h4><b>Sopa de Mandioca</b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="http://127.0.0.1:5500/comida.html"><img src="_img/card/pernil assado.jpg" alt="Avatar" style="width:100%"></a>
+            <div class="container1">
+                <h4><b>Pernil Assado</b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="http://127.0.0.1:5500/comida.html"><img src="_img/card/carne assada.jpg" alt="Avatar" style="width:100%"></a>
+            <div class="container2">
+                <h4><b>Carne Assada com Batata</b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="http://127.0.0.1:5500/comida.html"><img src="_img/card/lasanha.jpg" alt="Avatar" style="width:100%"></a>
+            <div class="container1">
+                <h4><b>Lasanha</b></h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="_img/card/bolo salgado.jpg" alt="Avatar" style="width:100%">
+            <div class="container3">
+                <h4><b>Bolo Salgado</b></h4>   
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="_img/card/bolo chocolate.jpg" alt="Avatar" style="width:100%">
+            <div class="container3">
+                <h4><b>Bolo de Chocolate</b></h4>   
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="_img/card/pave.jpg" alt="Avatar" style="width:100%">
+            <div class="container3">
+                <h4><b>Pavê de Leite Ninho com Morango</b></h4>   
+            </div>
+        </div>
+        
+         <div class="card">
+            <img src="_img/card/Salada-frutas.jpg" alt="Avatar" style="width:100%">
+            <div class="container4">
+                <h4><b>Salada de Frutas</b></h4>
+            </div>
+        </div>
+        
+         <div class="card">
+            <img src="_img/card/mousse-simple.jpg" alt="Avatar" style="width:100%">
+            <div class="container5">
+                <h4><b>Variações de Mousse</b></h4>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <ul class="atendimento">
+            <p>
+            <h3>Saiba Mais Sobre o Blog</h3>
+            </p>
+            <p><a href="#" class="">Entre em Contato</a></p>
+            <p><a href="#" class="">Cadastre para receber nossas Receitas</a></p>
+            <p><a href="#" class="">Sobre o Blog</a></p>
+            <p><a href="#" class="">Política de Privacidade</a></p>
+
+        </ul>
+
+        <ul class="lista1">
+            <p>
+            <h3>Encontre Receitas:</h3>
+            </p>
+            <p><a href="" class="">Receitas Fáceis</a></p>
+            <p><a href="" class="">Doces</a></p>
+            <p><a href="" class="">Lanche</a></p>
+            <p><a href="" class="">Acompanhamentos</a></p>
+        </ul>
+
+        <ul class="rest">
+            <p>
+            <h3>Nosso Restaurante esta localizado:</h3>
+            </p>
+            </br>
+            <p>Avenida Dona Alexandrina, 1086, centro, São Carlos-SP</p>
+        </ul>
+
+        <ul class="pesquisa">
+            <p>
+            <h4>Faça uma Pesquisa no Blog:</h4>
+            </p>
+            </br>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Pesquisar.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="_js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Courgette & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Rye & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 0;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    /* background: #a1a1a1; */
+    display: flex;
+    margin: 3px;
+}
+
+header {
+    /* border: red 2px solid ; */
+    height: 130px;
+    flex: 1 1 100vw;
+    background: #ff914d;
+    font-family: 'Braah One', sans-serif;
+}
+
+#openMenu,
+#closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+nav {
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 50px;
+    padding: 14px 16px;
+    list-style-type: none;
+}
+
+#conato {
+    text-indent: -50px;
+}
+
+nav a {
+    margin: 0 3%;
+    font-size: 20px;
+    padding: 40px;
+}
+
+th,
+td {
+    border: 1px solid #d80b0b;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+
+}
+
+h1 {
+    color: #d80b0b;
+    font-family: 'Lobster', cursive;
+}
+
+#bolos{
+    font-family: 'Courgette', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin-left: 43%;
+    color: #ca2121;
+}
+
+#comida{
+    font-family: 'Courgette', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 32%;
+    color: #ca2121;
+}
+
+#salgados{
+    font-family: 'Courgette', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 22%;
+    color: #ca2121;
+}
+
+#sobremesa{
+    font-family: 'Courgette', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin-left: 33%;
+    color: #ca2121;
+}
+
+
+#imgens {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding-left: 50px;
+    float: right;
+    margin: auto;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+}
+
+.video {
+    margin-left: 33%;
+    font-family: 'Rye', cursive;
+    font-size: 22px;
+}
+
+.video h3 {
+    text-indent: -50px;
+}
+
+footer {
+    flex: 1 1 200vw;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: red;
+    background-color: #ffde59;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 17px;
+
+}
+
+.rest {
+    text-indent: -100px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #d80b0b;
+    transition: 0.5s;
+}
+
+
+
+.dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffde59;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    color: #d80b0b;
+    transform: scale(0.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+@media screen and (max-width:717px) {
+
+    #openMenu,
+    #closeMenu {
+        display: block;
+    }
+
+    #openMenu {
+        margin-left: auto;
+    }
+
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255, 0.8);
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+        order: 1;
+    }
+
+    nav a {
+        margin: 3%;
+    }
+
+    aside {
+        height: 100px;
+        order: 3;
+    }
+
+    header {
+        order: 0;
+    }
+
+    main {
+        height: calc(100vh - 330px);
+        order: 2;
+    }
+
+    footer {
+        order: 4;
+    }
+
+}

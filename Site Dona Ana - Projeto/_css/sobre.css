@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.pimg1{
+    background-image: url(../_img/sobre/restaurant.jpg);
+    min-height: 100%;
+   
+}
+
+.pimg2{
+    background-image: url(../_img/sobre/mesa.jpg);
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url(../_img/sobre/cozinheira.jpg);
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-ligth{
+    background-color: #666 ;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.ptext .border{
+    background-color:#111 ;
+    color:  #ffff;
+    padding: 20px;
+    
+}
+
+.ptext .border .trans{
+    background-color: transparent;
+    
+}
+
+a{
+    color: #ffff;;
+}
+
+@media (max-width:568px) {
+    .pimg1,.pimg2,.pimg3{
+        background-attachment: scroll;
+    }
+    
+}

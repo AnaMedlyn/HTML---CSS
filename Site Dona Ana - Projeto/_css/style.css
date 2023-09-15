@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Courgette & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 0;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    display: flex;
+    margin: 3px;
+}
+
+header {
+    height: 130px;
+    flex: 1 1 100vw;
+    background: #ff914d;
+    font-family: 'Braah One', sans-serif;
+}
+
+#openMenu,
+#closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1px 7px 1px 7px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 200px;
+}
+
+nav a {
+    margin: 0 3%;
+    font-size: 20px;
+    padding: 40px;
+}
+
+/* logo */
+#quadrado {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    -webkit-animation: teste 0.65s linear both;
+    animation: teste 0.65s linear both;
+    animation-duration: 2s; 
+    animation-play-state: 5s running;
+
+}
+
+#conato {
+    text-indent: -50px;
+}
+
+.rest {
+    text-indent: -100px;
+}
+
+main {
+    height: calc(100vh - 224px);
+    flex: 20 1 100px;
+    flex-wrap: wrap;
+}
+
+#text h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+#text p {
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* CARDS */
+.card {
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 25px;
+    width: 260px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    font-size: 17px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.container {
+    padding: 2px 20px;
+}
+
+aside {
+    flex: 1 1 200px;
+    flex-wrap: wrap;
+}
+
+/* RODAPE */
+footer {
+    height: 100px;
+    flex: 1 1 200vw;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: red;
+    background-color: #ffde59;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 17px;
+
+}
+
+/* BARRA DE PESQUISAR */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #d80b0b;
+    transition: 0.5s;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffde59;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #d80b0b;
+    transform: scale(0.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* slider do capcake */
+.slider {
+    margin: 0 auto;
+    width: 280px;
+    height: 450px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 3s;
+}
+
+.slide img {
+    width: 250px;
+
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+.navigation-auto div {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 400px;
+    margin-top: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #d80b0b;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #d80b0b;
+}
+
+#panq {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* LOGIN */
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.lodg {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: 70px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 7px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+
+@media screen and (max-width:717px) {
+
+    #openMenu,
+    #closeMenu {
+        display: block;
+    }
+
+    #openMenu {
+        margin-left: auto;
+    }
+
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255, 0.8);
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+        order: 1;
+    }
+
+    nav a {
+        margin: 3%;
+    }
+
+    aside {
+        height: 100px;
+        order: 3;
+    }
+
+    header {
+        order: 0;
+    }
+
+    main {
+        height: calc(100vh - 330px);
+        order: 2;
+    }
+
+
+
+    footer {
+        order: 4;
+
+    }
+
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+@keyframes teste {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotateZ(180deg);
+        transform: scale(0.5) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
