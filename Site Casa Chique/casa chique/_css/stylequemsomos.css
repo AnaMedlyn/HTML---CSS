@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Playball&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(142, 106, 53);
+}
+header {
+    background-color: rgb(254, 229, 193);
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(142, 106, 53);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+h1{
+    margin-right: 300px;
+}
+
+img{
+    width: 150px; 
+    height: 150px;
+}
+
+.dropbtn {
+    background-color: rgb(238, 182, 118);
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 110px;
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(254, 229, 193);
+    min-width: 160px;
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(238, 182, 118)}
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.dropdown:hover .dropbtn {
+        background-color: rgb(238, 182, 118);
+}
+
+.text{
+    margin-top: 50px;
+    border: solid black 2px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(246, 214, 169);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;}
+
+footer{
+    width: 100%;
+    background-color: rgb(254, 229, 193);
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 40px;
+    padding-bottom: -0px;
+}
+
+footer img{
+    width: 150%;
+    height: 100%;
+}
+.slider{
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 400px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: -247px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked~ .first{
+    margin-left: 0;
+}
+#radio2:checked~ .first{
+    margin-left: -25%;
+}
+#radio3:checked~ .first{
+    margin-left: -50%;
+}
+.navigation-auto div{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 153px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: blue;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: blue;
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: black;
+    transform: scale(.7);
+    cursor: pointer;
+    
+  }

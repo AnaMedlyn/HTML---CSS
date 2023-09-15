@@ -1,0 +1,245 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(22, 21, 21);
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 229, 193);
+    padding: 0;
+    text-align: center;
+    color: black;
+    
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(129, 96, 69);
+    padding-right: 50px;
+    padding-left: 600px;
+
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.logo {
+    width: 210px;
+    height: 150px;
+}
+
+
+.title {
+    text-align: center;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+
+    margin: 20px;
+}
+
+a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(238, 182, 118);
+    transition: 0.5s;
+}
+
+article img{
+    width: 400px;
+    height: 250px;
+    border-radius: 1000px;
+    display: block;
+    
+}
+
+
+#btn-conta {
+    border: rgb(238, 182, 118) solid 2px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+#btn-conta:hover {
+    background-color: rgb(238, 182, 118);
+    color: white;
+}
+
+main {
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+aside {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+
+}
+
+span {
+    color: rgb(129, 96, 69);
+
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    text-align: justify;
+
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding-right: 50px;
+    padding-left: 30%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+form [type="text"] {
+    font: normal;
+    padding-right: 200px;
+}
+
+form [type="submit"] {
+    height: 10px;
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+form [type="submit"]:hover {
+    cursor: auto;
+
+}
+
+input {
+    margin-top: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: medium;
+    padding-left: 10px;
+
+}
+
+.pag{
+    margin: 100px;
+    height: 50px;
+}
+
+
+.compras img {
+    height: 30px;
+    width: 30px;
+    line-height: 10px;
+    padding-right: 100px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(254, 229, 193);
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 50px;
+    border: red;
+}
+
+#icon{
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute ;
+    background-color: rgb(238, 182, 118);
+    min-width: 160px;
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #e6cd89;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+

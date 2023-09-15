@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Playball&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(254, 229, 193);
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(142, 106, 53);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+article img {
+    width: 150px;
+    height: 150px;
+}
+
+h2 {
+    font-family: 'Alkatra', cursive;
+    line-height: 10px;
+    height: 20px;
+    margin-right: 400px;
+}
+
+h3 {
+    font-family: 'Alkatra', cursive;
+}
+
+p {
+    font-family: 'Alkatra', cursive;
+}
+
+divulgacao {
+    width: 350px;
+    height: 500px;
+}
+
+aside {
+    width: 15px;
+    padding: 30px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%
+}
+
+table {
+    /*border: red solid 2px;*/
+    align-items: center;
+    padding: 75px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+footer {
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(254, 229, 193);
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 50px;
+
+}
+
+#ico {
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(238, 182, 118);
+    transition: 0.5s;
+}
+
+a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(238, 182, 118);
+    transition: 0.5s;
+}
+
+.dropbtn {
+    background-color: rgb(238, 182, 118);
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 110px;
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(254, 229, 193);
+    min-width: 140px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(238, 182, 118)
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(238, 182, 118);
+}
+
+.text {
+    margin-top: 50px;
+    border: solid black 2px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(246, 214, 169);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+button {
+    color: black;
+    background-color: rgb(116, 201, 116);
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: black;
+    transform: scale(.7);
+    cursor: pointer;
+}

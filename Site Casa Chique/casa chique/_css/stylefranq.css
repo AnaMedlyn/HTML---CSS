@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(142, 106, 53);
+}
+header {
+    background-color: rgb(254, 229, 193);
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(142, 106, 53);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+h1{
+    margin-right: 300px;
+}
+
+img{
+    width: 150px; 
+    height: 150px;
+}
+main{
+    /* border: rgb(211, 10, 10)  solid 2px;  */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+}
+
+span{
+    color: black;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.text{
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.txt{
+    max-width: 80%;
+}
+
+#fotof{
+    width: 500px;
+    height: 300px;
+    padding-top: 5px;
+    margin-top: 0 auto;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color:brown ;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    margin: 35px;
+    
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+input{
+    margin-top: 15px;
+    height: 15px;
+    padding: 10px;
+    border: nome;
+    font-size: 15px;
+}
+
+#porque{
+    margin-top: 10px;
+    height: 10px;
+    padding: 40px;
+    border: nome;
+    font-size: 15px;
+}
+.dropbtn {
+    background-color: rgb(238, 182, 118);
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 110px;
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(254, 229, 193);
+    min-width: 160px;
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(238, 182, 118)}
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.dropdown:hover .dropbtn {
+        background-color: rgb(238, 182, 118));
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: black;
+    transform: scale(.7);
+    cursor: pointer;
+    
+  }
+
+
+
+
+
+
+
